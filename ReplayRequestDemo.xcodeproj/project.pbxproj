@@ -14,22 +14,11 @@
 		11F2BE1E181F164C008C4F34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2BE1D181F164C008C4F34 /* main.m */; };
 		11F2BE22181F164C008C4F34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2BE21181F164C008C4F34 /* AppDelegate.m */; };
 		11F2BE24181F164C008C4F34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F2BE23181F164C008C4F34 /* Images.xcassets */; };
-		11F2BE2B181F164D008C4F34 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F2BE2A181F164D008C4F34 /* XCTest.framework */; };
-		11F2BE2C181F164D008C4F34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F2BE11181F164C008C4F34 /* Foundation.framework */; };
-		11F2BE2D181F164D008C4F34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F2BE15181F164C008C4F34 /* UIKit.framework */; };
-		11F2BE35181F164D008C4F34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11F2BE33181F164D008C4F34 /* InfoPlist.strings */; };
-		11F2BE37181F164D008C4F34 /* ReplayRequestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2BE36181F164D008C4F34 /* ReplayRequestDemoTests.m */; };
+		11F2BE43181F171F008C4F34 /* NSURLRequest+replayRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2BE42181F171F008C4F34 /* NSURLRequest+replayRequest.m */; };
+		11F2BE46181F1758008C4F34 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2BE45181F1758008C4F34 /* MyViewController.m */; };
+		11F2BE48181F1784008C4F34 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F2BE47181F1784008C4F34 /* MyViewController.xib */; };
+		11F2BE4A181F1D95008C4F34 /* ReplayRequest.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 11F2BE49181F1D95008C4F34 /* ReplayRequest.podspec */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		11F2BE2E181F164D008C4F34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11F2BE06181F164C008C4F34 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 11F2BE0D181F164C008C4F34;
-			remoteInfo = ReplayRequestDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		11F2BE0E181F164C008C4F34 /* ReplayRequestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplayRequestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,11 +32,13 @@
 		11F2BE20181F164C008C4F34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11F2BE21181F164C008C4F34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		11F2BE23181F164C008C4F34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		11F2BE29181F164D008C4F34 /* ReplayRequestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReplayRequestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F2BE2A181F164D008C4F34 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		11F2BE32181F164D008C4F34 /* ReplayRequestDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReplayRequestDemoTests-Info.plist"; sourceTree = "<group>"; };
-		11F2BE34181F164D008C4F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		11F2BE36181F164D008C4F34 /* ReplayRequestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplayRequestDemoTests.m; sourceTree = "<group>"; };
+		11F2BE41181F171F008C4F34 /* NSURLRequest+replayRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+replayRequest.h"; sourceTree = "<group>"; };
+		11F2BE42181F171F008C4F34 /* NSURLRequest+replayRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+replayRequest.m"; sourceTree = "<group>"; };
+		11F2BE44181F1758008C4F34 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		11F2BE45181F1758008C4F34 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		11F2BE47181F1784008C4F34 /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		11F2BE49181F1D95008C4F34 /* ReplayRequest.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReplayRequest.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,24 +52,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		11F2BE26181F164D008C4F34 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11F2BE2B181F164D008C4F34 /* XCTest.framework in Frameworks */,
-				11F2BE2D181F164D008C4F34 /* UIKit.framework in Frameworks */,
-				11F2BE2C181F164D008C4F34 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		11F2BE05181F164C008C4F34 = {
 			isa = PBXGroup;
 			children = (
+				11F2BE49181F1D95008C4F34 /* ReplayRequest.podspec */,
+				11F2BE40181F1675008C4F34 /* ReplayRequest */,
 				11F2BE17181F164C008C4F34 /* ReplayRequestDemo */,
-				11F2BE30181F164D008C4F34 /* ReplayRequestDemoTests */,
 				11F2BE10181F164C008C4F34 /* Frameworks */,
 				11F2BE0F181F164C008C4F34 /* Products */,
 			);
@@ -88,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				11F2BE0E181F164C008C4F34 /* ReplayRequestDemo.app */,
-				11F2BE29181F164D008C4F34 /* ReplayRequestDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +92,9 @@
 				11F2BE21181F164C008C4F34 /* AppDelegate.m */,
 				11F2BE23181F164C008C4F34 /* Images.xcassets */,
 				11F2BE18181F164C008C4F34 /* Supporting Files */,
+				11F2BE44181F1758008C4F34 /* MyViewController.h */,
+				11F2BE45181F1758008C4F34 /* MyViewController.m */,
+				11F2BE47181F1784008C4F34 /* MyViewController.xib */,
 			);
 			path = ReplayRequestDemo;
 			sourceTree = "<group>";
@@ -126,22 +110,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		11F2BE30181F164D008C4F34 /* ReplayRequestDemoTests */ = {
+		11F2BE40181F1675008C4F34 /* ReplayRequest */ = {
 			isa = PBXGroup;
 			children = (
-				11F2BE36181F164D008C4F34 /* ReplayRequestDemoTests.m */,
-				11F2BE31181F164D008C4F34 /* Supporting Files */,
+				11F2BE41181F171F008C4F34 /* NSURLRequest+replayRequest.h */,
+				11F2BE42181F171F008C4F34 /* NSURLRequest+replayRequest.m */,
 			);
-			path = ReplayRequestDemoTests;
-			sourceTree = "<group>";
-		};
-		11F2BE31181F164D008C4F34 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				11F2BE32181F164D008C4F34 /* ReplayRequestDemoTests-Info.plist */,
-				11F2BE33181F164D008C4F34 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			path = ReplayRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,24 +139,6 @@
 			productReference = 11F2BE0E181F164C008C4F34 /* ReplayRequestDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		11F2BE28181F164D008C4F34 /* ReplayRequestDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 11F2BE3D181F164D008C4F34 /* Build configuration list for PBXNativeTarget "ReplayRequestDemoTests" */;
-			buildPhases = (
-				11F2BE25181F164D008C4F34 /* Sources */,
-				11F2BE26181F164D008C4F34 /* Frameworks */,
-				11F2BE27181F164D008C4F34 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				11F2BE2F181F164D008C4F34 /* PBXTargetDependency */,
-			);
-			name = ReplayRequestDemoTests;
-			productName = ReplayRequestDemoTests;
-			productReference = 11F2BE29181F164D008C4F34 /* ReplayRequestDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,11 +147,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Thibaut LE LEVIER";
-				TargetAttributes = {
-					11F2BE28181F164D008C4F34 = {
-						TestTargetID = 11F2BE0D181F164C008C4F34;
-					};
-				};
 			};
 			buildConfigurationList = 11F2BE09181F164C008C4F34 /* Build configuration list for PBXProject "ReplayRequestDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -209,7 +161,6 @@
 			projectRoot = "";
 			targets = (
 				11F2BE0D181F164C008C4F34 /* ReplayRequestDemo */,
-				11F2BE28181F164D008C4F34 /* ReplayRequestDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,14 +172,8 @@
 			files = (
 				11F2BE1C181F164C008C4F34 /* InfoPlist.strings in Resources */,
 				11F2BE24181F164C008C4F34 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11F2BE27181F164D008C4F34 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11F2BE35181F164D008C4F34 /* InfoPlist.strings in Resources */,
+				11F2BE48181F1784008C4F34 /* MyViewController.xib in Resources */,
+				11F2BE4A181F1D95008C4F34 /* ReplayRequest.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,41 +185,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F2BE22181F164C008C4F34 /* AppDelegate.m in Sources */,
+				11F2BE43181F171F008C4F34 /* NSURLRequest+replayRequest.m in Sources */,
+				11F2BE46181F1758008C4F34 /* MyViewController.m in Sources */,
 				11F2BE1E181F164C008C4F34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		11F2BE25181F164D008C4F34 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11F2BE37181F164D008C4F34 /* ReplayRequestDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		11F2BE2F181F164D008C4F34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 11F2BE0D181F164C008C4F34 /* ReplayRequestDemo */;
-			targetProxy = 11F2BE2E181F164D008C4F34 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		11F2BE1A181F164C008C4F34 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				11F2BE1B181F164C008C4F34 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		11F2BE33181F164D008C4F34 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11F2BE34181F164D008C4F34 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -380,48 +303,6 @@
 			};
 			name = Release;
 		};
-		11F2BE3E181F164D008C4F34 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReplayRequestDemo.app/ReplayRequestDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ReplayRequestDemo/ReplayRequestDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ReplayRequestDemoTests/ReplayRequestDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		11F2BE3F181F164D008C4F34 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReplayRequestDemo.app/ReplayRequestDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ReplayRequestDemo/ReplayRequestDemo-Prefix.pch";
-				INFOPLIST_FILE = "ReplayRequestDemoTests/ReplayRequestDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -439,14 +320,6 @@
 			buildConfigurations = (
 				11F2BE3B181F164D008C4F34 /* Debug */,
 				11F2BE3C181F164D008C4F34 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		11F2BE3D181F164D008C4F34 /* Build configuration list for PBXNativeTarget "ReplayRequestDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				11F2BE3E181F164D008C4F34 /* Debug */,
-				11F2BE3F181F164D008C4F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
