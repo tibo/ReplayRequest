@@ -10,22 +10,32 @@
 
 @implementation NSURLRequest (replayRequest)
 
--(NSString *)curlRequest
-{
-    __block NSString *curlString = [NSString stringWithFormat:@"curl -k -X %@ --dump-header -",self.HTTPMethod];
+- (NSString *)escapeQuotesInString:(NSString *)string {
+    NSParameterAssert(string);
     
-    [[self allHTTPHeaderFields] enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        curlString = [curlString stringByAppendingFormat:@" -H \"%@: %@\"",key, obj];
-    }];
+    return [string stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
+}
+
+- (NSString *)curlRequest {
     
-    NSString *data = [[NSString alloc] initWithData:self.HTTPBody encoding:NSUTF8StringEncoding];
+    NSMutableString *curlString = [NSMutableString stringWithFormat:@"curl -k -X %@ --dump-header -", self.HTTPMethod];
     
-    if (data)
-    {
-        curlString = [curlString stringByAppendingFormat:@" -d \"%@\"",data];
+    for (NSString *key in self.allHTTPHeaderFields.allKeys) {
+        
+        NSString *headerKey = [self escapeQuotesInString: key];
+        NSString *headerValue = [self escapeQuotesInString: self.allHTTPHeaderFields[key] ];
+
+        [curlString appendFormat:@" -H \"%@: %@\"", headerKey, headerValue];
     }
     
-    curlString = [curlString stringByAppendingFormat:@" %@",self.URL.absoluteString];
+    NSString *bodyDataString = [[NSString alloc] initWithData:self.HTTPBody encoding:NSUTF8StringEncoding];
+    if (bodyDataString.length) {
+        
+        bodyDataString = [self escapeQuotesInString: bodyDataString ];
+        [curlString appendFormat:@" -d \"%@\"", bodyDataString];
+    }
+    
+    [curlString appendFormat:@" \"%@\"", self.URL.absoluteString];
     
     return curlString;
 }
